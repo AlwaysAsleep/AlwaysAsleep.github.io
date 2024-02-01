@@ -22,6 +22,7 @@
 }
 
 body {
+    margin-top: 100px;
     min-height: 100vh;
     margin: 0;
     background-attachment: fixed;
@@ -36,6 +37,7 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
 }
@@ -209,7 +211,7 @@ section {
     align-items: center;
     padding: 0 9%;
     //background: url(../s/home.png) no-repeat;
-    background-color: var(--bg-color);
+    background-color: linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
     background-size: cover;
     background-position: center;
 }
