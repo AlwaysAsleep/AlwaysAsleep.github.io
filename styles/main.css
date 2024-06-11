@@ -31,6 +31,8 @@ header {
     background-color: var(--color-primary);
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -91,6 +93,22 @@ section {
 }
 
 .projects-content {
+    text-align: center;
+}
+
+.competences-content {
+    text-align: center;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.body-content {
+    text-align: center;
+}
+
+.main-content {
     text-align: center;
 }
 
@@ -178,6 +196,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    
 }
 
 .footer-content {
@@ -207,6 +226,12 @@ footer {
     height: 24px;
 }
 
+.project-button img {
+    width: 48x;
+    height: 48px;
+    
+}
+
 footer p {
     margin: 0;
 }
@@ -229,6 +254,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    
 }
 
 .wrapper {
