@@ -10,7 +10,7 @@
     <meta property="og:title" content="Portfolio de Tancrède">
     <meta property="og:description" content="">
     <link rel="icon" type="image/jpeg" href="static/logogeii-200x125.webp">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,63 +18,45 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="/index.html#home" class="active">Accueil</a></li>
                     <li><a href="/src/Competences.html">Compétences</a></li>
-                    <li><a href="/src/projets.html">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/index.html#projects">Projets</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="home_content" id="home">
-                <br>
-                <br>
-                <h1>Tancrède TEMPLIER-BOURDA</h1>
-                <h3>The Portfolio!</h3>
-                <p>Ceci est mon portfolio commencé lors de ma première année de BUT GEII </p>
-            </section>
             <br>
             <br>
             <br>
-           
-            <br>
-            <br>
-            <section class="projects-content" id="projects">
+            <section class="competences-content"id="competences">
                 <br>
                 <br>
                 <br>
-                <h1>Mes Projets les plus récents</h1>
-                
-                <a href="src/projects/SAE_KAH.html#kahhome">
+                <h1>Compétences</h1>
+
+                <h3>Liste des compétences et apprentissages critiques appris lors de mes années d'études</h3>
+
+                <h2>BUT GEII</h2>
+                <a href="src/projects/SAE_SLR.html#slrhome">
                     <button type="button" class="project-button">
-                        <img src="static/kah.jpeg" alt="kah">Projet KAH
+                       Concevoir
                     </button>
                 </a>
-
-                <a href="src/projects/SAE_KAH.html#kahhome">
+                <a href="src/projects/SAE_TDB.html#tdbhome">
                     <button type="button" class="project-button">
-                        <img src="static/kah.jpeg" alt="kah">PC-Mallette
+                        Verifier
                     </button>
                 </a>
-
+                <a href="src/projects/SAE_KAH.html#kahhome">
+                    <button type="button" class="project-button">
+                        Maintenir
+                    </button>
+                </a>
             </section>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <section class="contact" id="contact">
-                <h1>Me contacter</h1>
-
-                <p>
-                    Je reste contactable en permanence à l'adresse suivante : tancrede.templier.bourda@gmail.com
-                    <br> Et au numéro suivant : (+33) 7 77 49 35 35
-                </p>
-
-
-
-            </section>
         </main>
     </div>
 
@@ -100,7 +82,7 @@
 
     <script>
         // Charger le contenu du footer
-        fetch('src/footer.html')
+        fetch('footer.html')
             .then(response => response.text())
             .then(data => {
                 document.querySelector('footer').innerHTML = data;
