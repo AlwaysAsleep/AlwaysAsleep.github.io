@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Tancrède - Projet TDB</title>
+    <meta name="description" content="Description du projet SLR dans le portfolio de Tancrède"/>
+    <meta property="og:url" content="https://alwaysasleep.github.io"/>
+    <meta property="og:title" content="Portfolio de Tancrède - Projet SLR"/>
+    <meta property="og:description" content=""/>
+    <link rel="icon" type="image/jpeg" href="../../static/logogeii-200x125.webp">
+    <link rel="stylesheet" href="../../styles/main.css">
+</head>
+<body>
+    <!-- Inclure le header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html#home" class="active">Accueil</a></li>
+                <li><a href="../Competences.html">Compétences</a></li>
+                <li><a href="../projets.html">Projets</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home-content" id="concevoir">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1>COMPETENCE : CONCEVOIR</h1>
+
+            <br>
+            <br>
+
+            <p><b>Apprentissage critique :</b></p>
+            <p>La compétence concevoir est un apprentissage critique à acquir lors de la première année de BUT GEII à Bordeaux.
+                <br> Celle ci conciste en la capacité de créer à l'aide d'un cahier des charges des solutions conforme à celui ci, et des les 
+                rapporter dans la rédaction d'un dossier de Conception. <br> Cette compétence est paufinée depuis le début de ma première année de GEII, avec la réalisation de 
+                3 dossiers de Conception de plus en plus complexe. (Ils sont aussi disponible dans les pages de mes projet de BUT)
+                <br> Pour cette compétence, nous commencons par établir un schémas d'une architecture, comme par exemple celui-ci :
+                <br>
+                <section class="home-embed"id="ddv">
+                    <img src="../../static/Projects/SLR/archi.png"  width="70%" height="max"/>
+                    <p>Architecture de la carte récepteur du projet KAH</p>
+                </section>
+
+            </p>
+            <p>
+                Ensuite nous réalisons la première partie du DDC, soit la conception préliminaire :
+                <br> Celle ci consiste en la lecture du cahier des charges et au choix des composants les plus adapté à répondre à celui ci,
+                nous ne réalisons pas encore les calculs de valeur de composants.
+                <br>
+                <br>
+                Enfin nous passons à l'étape de conception détaillé :
+                <br>
+                Lors de cette étape, nous réalisons tout les calculs de valeurs (résistances, condensateurs, etc...) puis nous réalisons le schémas électronique d'une carte,
+                nous réalisons aussi le routage de celle-ci. 
+                <br> par exemple :
+                <br>
+                <section class="home-embed"id="ddv">
+                    <img src="../../static/schemas.png"  width="70%" height="max"/>
+                    <p>Circuit de la carte récepteur </p>
+                </section>
+            </p>
+            <p>
+                Ainsi, nous finalisons cette compétence en rendant un dossier de conception complété comme celui ci :
+                <br>
+                <section class="home-embed" id="ddc">
+                    <h2>Dossier de Conception (DDC)</h2>
+                    <br>
+                    <embed src="../../static/Projects/KAH/KAH_DDC_EQ11.docx.pdf" width="70%" height="2000" type="application/pdf"/>
+                    
+                </section>    
+            </p>
+
+    </main>
+
+    <!-- Inclure le footer -->
+    <div id="footer-container"></div>
+    
+    <script>
+        // Charger le contenu du header
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Charger le contenu du footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

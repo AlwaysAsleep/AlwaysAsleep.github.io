@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Tancrède - Projet TDB</title>
+    <meta name="description" content="Description du projet SLR dans le portfolio de Tancrède"/>
+    <meta property="og:url" content="https://alwaysasleep.github.io"/>
+    <meta property="og:title" content="Portfolio de Tancrède - Projet SLR"/>
+    <meta property="og:description" content=""/>
+    <link rel="icon" type="image/jpeg" href="../../static/logogeii-200x125.webp">
+    <link rel="stylesheet" href="../../styles/main.css">
+</head>
+<body>
+    <!-- Inclure le header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html#home" class="active">Accueil</a></li>
+                <li><a href="../Competences.html">Compétences</a></li>
+                <li><a href="../projets.html">Projets</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home-content" id="concevoir">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1>COMPETENCE : VERIFIER</h1>
+
+            <br>
+            <br>
+
+            <p><b>Apprentissage critique :</b></p>
+            <p>La compétence vérifier est un apprentissage critique à acquir lors de la première année de BUT GEII à Bordeaux.
+                <br> Celle ci conciste en la capacité valider la conformité d'une solution technique vis à vis d'un cahier des charges, et des les 
+                rapporter dans la rédaction d'un dossier de Vérification. <br> Cette compétence est paufinée depuis le début de ma première année de GEII, avec la réalisation de 
+                3 dossiers de Vérification de plus en plus complexe. (Ils sont aussi disponible dans les pages de mes projet de BUT)
+                <br> Pour cette compétence, nous commencons par une relecture du cahier des charges d'un projet ainsi que du Dossier de conception associé.
+                <br>
+                Pour cela, nous réalisons une suite de test pour chaques exigences du cahier des charges. Nous commencons par des tests de continuité des pistes, ensuite
+                nous mesurons chaques résistances du circuit et vérifions la place de chaques composants. <br><br> Ainsi, nous passons aux tests sur les exigences :
+                <br> Pour cela, nous commencons par un rappel du Cahier des charges et des résultats attendus pour une exigence, ensuite nous mettons en place une procédure d'essai
+                écirte et schématisée. Nous continuons en réalisant le test en suivant la procédure, nous prenons aussi des photos à chaques résultats aquis lors du déroulement du test.
+                <br> Pour finir, nous comparons les résultats experimentaux avec ceux attendus et validons (ou ne validons pas) la conformité de cette exigence.
+                <br> Celle ci consiste en la lecture du cahier des charges et au choix des composants les plus adapté à répondre à celui ci,
+                nous ne réalisons pas encore les calculs de valeur de composants.
+                <br>
+
+                Ainsi, nous finalisons cette compétence en rendant un dossier de vérification complété comme celui ci :
+                <br>
+                <section class="home-embed" id="ddv">
+                    <h2>Dossier de Vérification (DDV)</h2>
+                    <br>
+                    <embed src="../../static/Projects/KAH/KAH_DDV.docx.pdf" width="70%" height="2000" type="application/pdf"/>
+                    
+                </section>    
+            </p>
+
+    </main>
+
+    <!-- Inclure le footer -->
+    <div id="footer-container"></div>
+    
+    <script>
+        // Charger le contenu du header
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Charger le contenu du footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
