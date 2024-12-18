@@ -66,26 +66,19 @@
                 <br>
                 <br>
                 <h3>Liste des compétences et apprentissages personnels</h3>
-                <h2>Loisir</h2>
-                <a href="src/competences/musique.html">
+                <h2>Loisir et Pratique</h2>
+                <a href="competences/musique.html">
                     <button type="button" class="project-button">
                        Jouer de la musique
                     </button>
                 </a>
-                <a href="src/projects/SAE_SLR.html#slrhome">
-                    <button type="button" class="project-button">
-                       Jouer de la musique
-                    </button>
-                </a>
-                <br>
-                <br>
-                <h2>Pratique</h2>
-                <a href="src/projects/SAE_SLR.html#slrhome">
+
+                <a href="competences/programmation.html">
                     <button type="button" class="project-button">
                        Programmation
                     </button>
                 </a>
-                <a href="src/competences/3d.html">
+                <a href="competences/3d.html">
                     <button type="button" class="project-button">
                        Modélisation et Impression 3D
                     </button>
@@ -98,27 +91,12 @@
 
     <!-- Inclure le footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.instagram.com/yourusername" target="_blank">
-                    <img src="static/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://github.com/yourusername" target="_blank">
-                    <img src="static/github.svg" alt="GitHub">
-                </a>
-                <a href="https://discord.gg/yourdiscordlink" target="_blank">
-                    <img src="static/discord.svg" alt="Discord">
-                </a>
-            </div>
-            <p>
-                <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0 License</a>
-            </p>
-        </div>
+
     </footer>
 
     <script>
         // Charger le contenu du footer
-        fetch('footer.html')
+        fetch('./footer.html')
             .then(response => response.text())
             .then(data => {
                 document.querySelector('footer').innerHTML = data;

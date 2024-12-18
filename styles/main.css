@@ -3,11 +3,11 @@
 :root {
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
-    --color-background: #f4f4f9;
-    --color-primary: #007BFF;
-    --color-secondary: #6c757d;
+    --color-background: #cccccc;
+    --color-primary: #2fc9e4bd;
+    --color-secondary: #3b4146;
     --color-text: #000000;
-    --color-hover: #0056b3;
+    --color-hover: #033061;
 }
 
 html, body {
